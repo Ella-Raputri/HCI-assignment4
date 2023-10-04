@@ -130,8 +130,7 @@ footer img{
         line-height: 1.0;
         text-align: justify;
         padding: 5px;
-        font-size: 12px;
-        
+        font-size: 12px;      
     }
 
     .section1 h1{
@@ -145,8 +144,36 @@ footer img{
     }
 }
 
+@media screen and (max-width:340px){
+    .ella{
+        width: 100px;
+        height: 100px;
+    }
 
-@media screen and (max-width:690px){
+    .section1{
+        line-height: 1.0;
+        text-align: justify;
+        padding: 5px;
+        font-size: 10px;      
+    }
+
+    .section1 h1{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .insta::before{
+        content: "\a";
+        white-space: pre;
+    }
+
+    legend{
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (min-width:360px) and (max-width:690px){
     th{
         display: none;
     }
@@ -164,3 +191,20 @@ footer img{
     }
 }
   
+@media screen and (max-width:360px){
+    th{
+        display: none;
+    }
+    td{
+        display: grid;
+        border-collapse: collapse;
+        grid-template-columns: 5ch auto;
+    }
+
+    td::before{
+        content: attr(datacell) ": ";
+        font-weight: bold;
+        color:rgb(192, 0, 125);
+        font-family: "Garamond";
+    }
+}
