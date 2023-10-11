@@ -41,22 +41,6 @@ body{
   background-color: #505050;
 }
 
-.flexcontainer{
-display: flex;
-flex-direction: row;
-}
-
-.flexcontainer1{
-align-items: flex-end;
-}
-
-.flexcontainer2{
-align-items: flex-end;
-}
-
-.flexcontainer1, .flexcontainer2{
-flex: 1;
-}
 
 .content_exp{
     background-color: rgba(237, 205, 218, 0.529);
@@ -120,8 +104,8 @@ h3 a:hover{
 }
 
 
-@media screen and (max-width: 1050px) {
-  .topnav .flexcontainer{
+@media screen and (max-width: 610px) {
+  .topnav .container{
       display: block;
   }
   .topnav a{
