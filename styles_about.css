@@ -1,0 +1,140 @@
+body{
+    background-image: url(brick.png);
+    padding: 20px;
+}
+ 
+.header{
+    text-align: center;
+    line-height: 0.75;
+    padding: 5px;
+    background-color: rgba(255, 244, 248, 0.5);
+    /*border: 3px rgb(119, 0, 0) solid;*/
+    line-height: 0.75;
+    font-family: "Cambria";
+    font-size: 20px;
+    color: rgb(176, 0, 82);
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgba(225, 175, 175, 0.596);
+  }
+  
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: rgb(83, 53, 53);
+    font-family: 'Arial';
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+.topnav a:hover {
+    color: #f2f2f2;
+    background-color: #966969;
+}
+
+.topnav .active{
+    color: #ffffff;
+    background-color: #505050;
+}
+
+.flexcontainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.flexcontainer1{
+  align-items: flex-end;
+}
+
+.flexcontainer2{
+  align-items: flex-end;
+}
+
+.flexcontainer1, .flexcontainer2{
+  flex: 1;
+}
+
+  .content_about{
+    background-color: rgba(237, 205, 205, 0.529);
+    font-family: "bell mt";
+    padding: 5px;
+    padding-bottom: 10px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+legend{
+    font-size: 28px;
+    font-family: "Segoe Script";
+    font-weight: bold;
+    color:rgb(91, 0, 0)
+}
+
+fieldset{
+    border: none;
+}
+
+img {
+    max-width: 100%;
+  }
+
+  .media {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    text-align: center;
+  }
+  
+  .media .image1, .image2 {
+    flex: 1;
+    padding: 10px;
+  }
+
+
+.footer a:active, .footer a{
+    color:rgb(0, 0, 0);
+    font-size: 18px;
+  }
+
+.footer a:visited{
+    color:rgb(174, 29, 29);
+  }
+
+.footer a:hover{
+    color:rgb(168, 163, 29);
+  }
+
+.footer{
+    font-family: 'lucida sans';
+    font-size: 18px;
+  }
+
+
+  @media screen and (max-width: 1020px) {
+    .topnav .flexcontainer{
+        display: block;
+    }
+    .topnav a{
+        display: block;
+        float: left;
+        width: 100%
+        }
+  }
+
+
+  @media (max-width: 800px) {
+    .media{
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .media .image1, .media .image2{
+    max-width: 70%
+  }
+}

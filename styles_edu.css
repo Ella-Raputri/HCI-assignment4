@@ -1,0 +1,132 @@
+body{
+    background-image: url(brick.png);
+    padding: 20px;
+}
+
+.header{
+    text-align: center;
+    line-height: 0.75;
+    padding: 5px;
+    background-color: rgba(255, 244, 248, 0.5);
+    /*border: 3px rgb(119, 0, 0) solid;*/
+    line-height: 0.75;
+    font-family: "Cambria";
+    font-size: 20px;
+    color: rgb(176, 0, 82);
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgba(225, 175, 175, 0.596);
+  }
+  
+  
+.topnav a {
+    float: left;
+    display: block;
+    color: rgb(83, 53, 53);
+    font-family: 'Arial';
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+
+.topnav a:hover {
+    color: #f2f2f2;
+    background-color: #966969;
+}
+
+.topnav .active{
+    color: #ffffff;
+    background-color: #505050;
+}
+
+.flexcontainer{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexcontainer1{
+    align-items: flex-end;
+}
+
+.flexcontainer2{
+    align-items: flex-end;
+}
+
+.flexcontainer1, .flexcontainer2{
+    flex: 1;
+}
+
+.content_edu{
+    background-color: rgba(237, 205, 232, 0.455);
+    font-family: "times new roman";
+    padding: 5px;
+    padding-bottom: 10px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+h3{
+    font-family: "constantia";
+    color:rgb(186, 39, 105)
+}
+
+fieldset{
+    border: none;
+}
+
+legend{
+    font-size: 28px;
+    font-family: "Segoe Script";
+    font-weight: bold;
+    color:rgb(91, 0, 0)
+}
+
+.footer a:active, .footer a{
+    color:rgb(0, 0, 0);
+    font-size: 18px;
+  }
+
+.content_edu a, .content_edu a:active{
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+  }
+
+.footer a:visited, .content_edu a:visited{
+    color:rgb(174, 29, 29);
+  }
+
+.footer a:hover{
+    color:rgb(168, 163, 29);
+  }
+
+  .content_edu a:hover{
+    color: rgb(168, 101, 29);
+  }
+
+.footer{
+    font-family: 'lucida sans';
+    font-size: 18px;
+  }
+
+
+  @media screen and (max-width: 1020px) {
+    .topnav .flexcontainer{
+        display: block;
+    }
+    .topnav a{
+        display: block;
+        float: left;
+        width: 100%
+        }
+  }
+
+@media screen and (max-width:800px){
+    .content_edu img{
+        width: 10%;
+        height: 10%;
+    }
+    
+}
+  

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ella Raputri's Portfolio</title>
+    <link href="styles_general.css" rel="stylesheet"/>
+
+</head>
+<body>
+    <div class="header">
+        <h1>My Portfolio</h1>
+        <p>Welcome to my portfolio!</p>
+    </div>
+
+    <br/>
+    <div class="topnav">
+        <div class="flexcontainer">
+            <div class="flexcontainer1">
+                <a href="index.html" >Home</a>
+            </div>
+            <div class="flexcontainer2">
+                <a href="about.html" >About Me</a>
+                <a href="general.html" class="active" >General Information</a>
+                <a href="edu.html" >Education</a>
+                <a href="exp.html" >Experiences</a>
+            </div>
+        </div>
+    </div>
+    <br/>
+
+    <div class="content_general">
+        <fieldset>
+        <legend>General Information</legend><br/>
+            <table>  <!--cellpadding="10" cellspacing="30">-->
+                <tr>
+                    <th> Gender </th>
+                    <th> Date of Birth</th>
+                    <th> Place of Birth</th>
+                </tr>
+
+                <tr>
+                    <td datacell="Gender">
+                        <label>
+                            <input type="radio" name="genders" value="male"/> Male<br/>
+                            <input type="radio" name="genders" value="female" checked/> Female
+                        </label>
+                    </td>
+
+                    <td datacell="Date of Birth"> 23rd January 2005 </td>
+                    <td datacell="Place of Birth">Batam, Riau Islands, Indonesia</td>
+                    
+                </tr>
+            </table>
+
+            <br/><br/>
+            <table> 
+                <tr>
+                    <th>Hobbies</th>
+                    <th>Favourite Lesson</th>
+                    <th> Address</th>
+                </tr> 
+
+                <tr>
+                    <td datacell="Address">Grogol, West Jakarta, Indonesia</td>
+                    <td datacell="Hobbies">
+                        <ul>
+                            <li>Playing games</li>
+                            <li>Reading books</li>
+                        </ul>
+                    </td>
+
+                    <td datacell="Favourite Lesson">Mathematics</td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+
+    <br/>
+    <div class="footer">
+        <p>Other Contacts: 
+            <a href="https://wa.me/62895629504490"><img src=.\WhatsApp.webp alt="WhatsApp" width="20px"> WhatsApp</a> 
+            <a href="https://line.me/ti/p/_YCfUPL6D_"> <img src=.\line.png alt="Line" width="20px"> Line</a></p>
+        </p>
+        
+    </footer>
+    </div>
+    
+</body>
+</html>
